@@ -1,0 +1,3 @@
+[submodule "lib/avril/avrlib"]
+	path = lib/avril/avrlib
+	url = https://github.com/pichenettes/avril

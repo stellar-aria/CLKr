@@ -1,0 +1,36 @@
+ATMega328P
+
+PD5 - Pulse output corresponding to clock, possibly top led
+PD6 - Output corresponding to Pause LED
+PC4/ADC4 - Rate CV Input - Lower ADC reading = higher bpm (basically inverting rail-to-rail op-amp)
+PC3/ADC3 - Pause CV input - Normaled to Ov in jack, reads high when low (basically inverting rail-to-rail op-amp)
+PC2/ADC2 - Rate Switch 0v Fast, 5v Slow
+PC1/ADC1 - Rate Pot, 0v Slow, 5v Fast
+PB5/SCK - Clock output
+PB4/MISO - Pause Switch Input, not pullup
+
+Clock rate:
+SLOW: 10s - 34ms
+FAST: 2.5s - 8.5 ms
+supposedly(2.44s)
+
+
+Prescaler:clk/8
+ticks: 21250
+time: 8.5ms
+
+Prescaler:clk/8
+ticks: 6100000
+time: 2.44s
+
+Prescaler:clk/8
+ticks: 6250000
+time: 2.5s
+
+prescaler: clk/32
+ticks: 21250
+time: 34ms
+
+prescaler: clk/32
+ticks: 6250000
+time: 10s
