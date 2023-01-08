@@ -6,7 +6,7 @@ The inspiration for this alternate firmware came from my frustration using __Clk
 
 ### Same Core Functionality
  - A stable, proven internal clocking system based on Grids'
- - A base BPM range of 20 to 256 (or even higher with control voltage)
+ - A base BPM range of 20 to 240 (or even higher with control voltage)
  - Analog CV control over the full BPM range.
  - Pause button and gate input to halt the clock in its tracks (...or really just disable the output)
 
@@ -25,7 +25,7 @@ The inspiration for this alternate firmware came from my frustration using __Clk
 ### Controls
 #### A. Multifunction Button
 In Pause mode, pressing will pause the output of the clock, and the bottom LED will be illuminated.  
-In Tap Tempo mode, pressing twice will set the clock to the beat of those taps, indicated by both LEDs blinking in synchrony. Tapping the button once more or turning the Rate control will unlock the clock.
+In Tap Tempo mode, pressing twice will set the clock to the beat of those taps, indicated by both LEDs blinking in synchrony. Tapping the button once more will unlock the clock.
 
 #### B. Range Switch
 Flipping this switch will swap between a low-rate output useful for driving step sequencers and a high-resolution mode perfect for controlling other clock systems.
@@ -67,6 +67,9 @@ While in the Settings mode, turn the rate knob. The current state is indicated b
 # Installation
 ## Disclaimer
 I take _no_ responsibility for the functionality or lack thereof of your module if you choose to follow this guide or install this firmware. DO THIS AT YOUR OWN RISK. You should not be doing this if you don't have experience with uploading firmware or using a terminal. I will not be giving support for installation or setup.
+
+## Compatibility 
+The board I used for development and testing has `Rev8` on it next to the programming port. If you have a different board and aren't sure if this firmware will work on it, DON'T TRY UPLOADING. Instead, open an issue and attach a photo of your board and I'll let you know if it should work or not. I'll update this section as necessary to list known working board revisions.
 
 ## Prerequisites
 You'll need a hardware programmer such as a USBtinyISP and either a set of [AVR ISP pogo pins](https://smile.amazon.com/pin-AVR-ICSP-Pogo-Adapter/dp/B075Q25BK3/) or 2x3 header pins to solder to the programming port on your __Clk__. (Please note that if you're on Windows you _must_ install the libusb drivers before the programmer will show up correctly. Sparkfun has a good guide [here](https://learn.sparkfun.com/tutorials/tiny-avr-programmer-hookup-guide/driver-installation))
